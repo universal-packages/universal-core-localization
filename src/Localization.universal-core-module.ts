@@ -2,7 +2,7 @@ import { CoreModule } from '@universal-packages/core'
 import { Localization, LocalizationOptions } from '@universal-packages/localization'
 
 export default class LocalizationModule extends CoreModule<LocalizationOptions> {
-  public static readonly moduleName = 'storage-module'
+  public static readonly moduleName = 'localization-module'
   public static readonly description = 'Localization initialization module'
 
   public subject: Localization
