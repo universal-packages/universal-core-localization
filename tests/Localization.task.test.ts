@@ -5,7 +5,7 @@ import LocalizationTask from '../src/Localization.universal-core-task'
 
 jest.mock('@universal-packages/template-populator')
 
-describe('LocalizationTask', (): void => {
+describe(LocalizationTask, (): void => {
   it('behaves as expected', async (): Promise<void> => {
     const logger = new Logger({ silence: true })
 
