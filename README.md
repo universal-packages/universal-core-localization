@@ -32,6 +32,12 @@ core.coreModules.localizationModule.subject.translate()
 
 ## Typescript
 
+In order for typescript to see the `localizationSubject` global you need to reference the types somewhere in your project, normally `./src/globals.ts`.
+
+```ts
+/// <reference types="@universal-packages/core-localization" />
+```
+
 This library is developed in TypeScript and shipped fully typed.
 
 ## Contributing
