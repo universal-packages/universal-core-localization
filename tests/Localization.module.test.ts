@@ -1,13 +1,16 @@
-import { Logger } from '@universal-packages/logger'
-
 import { LocalizationModule } from '../src'
+
+jestCore.runBare({
+  coreConfigOverride: {
+    config: { location: './tests/__fixtures__/config' },
+    modules: { location: './tests/__fixtures__' },
+    logger: { silence: true }
+  }
+})
 
 describe(LocalizationModule, (): void => {
   it('behaves as expected', async (): Promise<void> => {
-    const logger = new Logger({ silence: true })
-    const module = new LocalizationModule({} as any, logger)
-
-    await module.prepare()
-    await module.release()
+    expect(global.localizationSubject).not.toBeUndefined()
+    expect(global.localizationSubject.options).toEqual({ defaultLocale: 'en', useFileName: true, localizationsLocation: './src' })
   })
 })
