@@ -16,7 +16,7 @@
     "update-dependents": "umaintenance update-dependents"
   },
   "dependencies": {
-    "@universal-packages/localization": "^1.2.7"
+    "@universal-packages/localization": "^1.2.8"
   },
   "peerDependencies": {
     "@universal-packages/core": "^1.16.20"
