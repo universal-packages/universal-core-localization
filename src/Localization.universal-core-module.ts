@@ -10,7 +10,7 @@ export default class LocalizationModule extends CoreModule<LocalizationOptions> 
   public async prepare(): Promise<void> {
     this.subject = new Localization(this.config)
 
-    await this.subject.prepare()
+    this.subject.prepare()
   }
 
   public async release(): Promise<void> {}
