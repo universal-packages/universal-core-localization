@@ -15,7 +15,7 @@ npm install @universal-packages/core-localization
 ## Initialization
 
 ```shell
-ucore exec localization-task init
+ucore initialize localization
 ```
 
 ## Global

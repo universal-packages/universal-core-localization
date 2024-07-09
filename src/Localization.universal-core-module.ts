@@ -4,7 +4,7 @@ import { Localization, LocalizationOptions } from '@universal-packages/localizat
 import { LOG_CONFIGURATION } from './LOG_CONFIGURATION'
 
 export default class LocalizationModule extends CoreModule<LocalizationOptions> {
-  public static readonly moduleName = 'localization-module'
+  public static readonly moduleName = 'localization'
   public static readonly description = 'Localization initialization module'
 
   public subject: Localization
